@@ -1,0 +1,1383 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-25 19:36:48.240093 UTC
+
+interface main@main:Main 8002
+  interface hash: 2f9fdf990d2e72ef8854779150cdf134
+  ABI hash: 6587f5ad00aaaff678391b9c3e76592c
+  export-list hash: ee2525f7e7eed0a9375eca47735a9735
+  orphan hash: 0864743ab825a7a6de4eb02d0e269871
+  flag hash: fb9eb1e5f01f5a47f89cf99ed16cd08d
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.demo1Int
+  Main.demoBool
+  Main.demoInts
+  Main.demoMovs
+  Main.demor
+  Main.main
+module dependencies:
+package dependencies: CIS194-HW02-0.1.0.0@CIS194-HW02-0.1.0.0-6HBTsqSSq7rNhvpd7HKyy
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      filepath-1.4.1.1@filepath-1.4.1.1 ghc-8.0.2
+                      ghc-boot-8.0.2@ghc-boot-8.0.2 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-paths-0.1.0.9@ghc-paths-0.1.0.9-AhaDlGOsRAepox069XzG
+                      ghc-prim-0.5.0.0 ghci-8.0.2@ghci-8.0.2
+                      hint-0.6.0@hint-0.6.0-A4nqiluIp9FDH7IhvBtzzL
+                      hoopl-3.10.2.1@hoopl-3.10.2.1 hpc-0.6.0.3@hpc-0.6.0.3
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3 process-1.4.3.0@process-1.4.3.0
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      template-haskell-2.11.1.0 time-1.6.0.1@time-1.6.0.1
+                      transformers-0.5.2.0@transformers-0.5.2.0 unix-2.7.2.1@unix-2.7.2.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         ghc-8.0.2:BlockId ghc-8.0.2:DsMonad ghc-8.0.2:LoadIface
+         ghc-8.0.2:PPC.Ppr ghc-8.0.2:PprCmm ghc-8.0.2:PprCmmDecl
+         ghc-8.0.2:PprCmmExpr ghc-8.0.2:PprCore ghc-8.0.2:SPARC.Ppr
+         ghc-8.0.2:TcEnv ghc-8.0.2:TcRnMonad ghc-8.0.2:X86.Ppr
+         ghc-boot-8.0.2@ghc-boot-8.0.2:GHC.LanguageExtensions
+         ghci-8.0.2@ghci-8.0.2:GHCi.Message
+         ghci-8.0.2@ghci-8.0.2:GHCi.TH.Binary
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-8.0.2:PlaceHolder ghc-8.0.2:TrieMap
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         ghci-8.0.2@ghci-8.0.2:GHCi.FFI ghci-8.0.2@ghci-8.0.2:GHCi.Message
+                         ghci-8.0.2@ghci-8.0.2:GHCi.ResolvedBCO
+                         ghci-8.0.2@ghci-8.0.2:SizedSeq
+                         hoopl-3.10.2.1@hoopl-3.10.2.1:Compiler.Hoopl.Block
+                         hoopl-3.10.2.1@hoopl-3.10.2.1:Compiler.Hoopl.Dataflow
+                         hoopl-3.10.2.1@hoopl-3.10.2.1:Compiler.Hoopl.Fuel
+                         hoopl-3.10.2.1@hoopl-3.10.2.1:Compiler.Hoopl.Label
+                         hoopl-3.10.2.1@hoopl-3.10.2.1:Compiler.Hoopl.Unique
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  CIS194-HW02-0.1.0.0@CIS194-HW02-0.1.0.0-6HBTsqSSq7rNhvpd7HKyy:Lib 9dcf69db1a4682dc84ba339e3066a4df
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  hint-0.6.0@hint-0.6.0-A4nqiluIp9FDH7IhvBtzzL:Hint.Context 0348e1bb2aa8e6a2d1e64f0d98e2b541
+import  -/  hint-0.6.0@hint-0.6.0-A4nqiluIp9FDH7IhvBtzzL:Hint.Eval bbc0c9a09b0a6f0315a4b56e22f60833
+import  -/  hint-0.6.0@hint-0.6.0-A4nqiluIp9FDH7IhvBtzzL:Hint.InterpreterT b5523350f67aaee921baf81225f95f8c
+import  -/  hint-0.6.0@hint-0.6.0-A4nqiluIp9FDH7IhvBtzzL:Language.Haskell.Interpreter dd8b9aeebb17422f2ff9b6974e125907
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+d3c5ee7cb55562ed8fc314e14f92b5bd
+  $s$fMonadCatchInterpreterT ::
+    Control.Monad.Catch.MonadCatch
+      (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                  Main.$s$fMonadCatchInterpreterT_$s$fMonadCatchInterpreterT_$cp1MonadCatch
+                  (Hint.InterpreterT.$fMonadCatchInterpreterT_$ccatch
+                     @ GHC.Types.IO
+                     Control.Monad.Catch.$fMonadMaskIO
+                     Control.Monad.IO.Class.$fMonadIOIO) -}
+8581ae638017678291180ba35033db49
+  $s$fMonadCatchInterpreterT_$dMonad :: GHC.Base.Monad GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) GHC.Base.$fMonadIO -}
+0d54240d263a423ea4dbbecad558889e
+  $s$fMonadCatchInterpreterT_$dMonadCatch ::
+    Control.Monad.Catch.MonadCatch GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Control.Monad.Catch.$fMonadCatchIO -}
+2b649e637e47ad196be361e8fa201d17
+  $s$fMonadCatchInterpreterT_$s$fMonadCatchInterpreterT_$cp1MonadCatch ::
+    Control.Monad.Catch.MonadThrow
+      (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$s$fMonadCatchInterpreterT_$s$fMonadThrowInterpreterT -}
+b06ad074ba2c8ced03e997eff74f6ff0
+  $s$fMonadCatchInterpreterT_$s$fMonadIOInterpreterT_$cp1MonadIO ::
+    GHC.Base.Monad (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$s$fMonadCatchInterpreterT_$s$fMonadInterpreterT -}
+be2e603d9279ba6ece16fd1a3451bc47
+  $s$fMonadCatchInterpreterT_$s$fMonadInterpreterT ::
+    GHC.Base.Monad (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                  (Hint.InterpreterT.$fMonadInterpreterT_$cp1Monad
+                     @ GHC.Types.IO
+                     Main.$s$fMonadCatchInterpreterT_$dMonad)
+                  (Hint.InterpreterT.$fMonadInterpreterT_$c>>=
+                     @ GHC.Types.IO
+                     Main.$s$fMonadCatchInterpreterT_$dMonad)
+                  (Hint.InterpreterT.$fMonadInterpreterT_$c>>
+                     @ GHC.Types.IO
+                     Main.$s$fMonadCatchInterpreterT_$dMonad)
+                  (Hint.InterpreterT.$fApplicativeInterpreterT_$creturn
+                     @ GHC.Types.IO
+                     Main.$s$fMonadCatchInterpreterT_$dMonad)
+                  (Hint.InterpreterT.$fMonadInterpreterT_$cfail
+                     @ GHC.Types.IO
+                     Main.$s$fMonadCatchInterpreterT_$dMonad) -}
+629ec580d08760716cb15923cf0b7480
+  $s$fMonadCatchInterpreterT_$s$fMonadThrowInterpreterT ::
+    Control.Monad.Catch.MonadThrow
+      (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                  Main.$s$fMonadCatchInterpreterT_$s$fMonadIOInterpreterT_$cp1MonadIO
+                  (Hint.InterpreterT.$fMonadThrowInterpreterT_$cthrowM
+                     @ GHC.Types.IO
+                     Main.$s$fMonadCatchInterpreterT_$dMonadCatch) -}
+d12c4fd2f8160836c0e7428d160373bd
+  $s$fMonadIOInterpreterT ::
+    Control.Monad.IO.Class.MonadIO
+      (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                  Main.$s$fMonadCatchInterpreterT_$s$fMonadIOInterpreterT_$cp1MonadIO
+                  (Hint.InterpreterT.$fMonadIOInterpreterT_$cliftIO
+                     @ GHC.Types.IO
+                     Control.Monad.IO.Class.$fMonadIOIO) -}
+f11d303d163ae3275722b9a4f1f95d50
+  $s$fMonadInterpreterInterpreterT ::
+    Hint.Base.MonadInterpreter
+      (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                  Main.$s$fMonadInterpreterInterpreterT_$s$fMonadInterpreterInterpreterT_$cp1MonadInterpreter
+                  Main.$s$fMonadInterpreterInterpreterT_$s$fMonadInterpreterInterpreterT_$cp2MonadInterpreter
+                  (Hint.InterpreterT.$fMonadInterpreterInterpreterT_$cfromSession
+                     @ GHC.Types.IO
+                     Control.Monad.IO.Class.$fMonadIOIO
+                     Control.Monad.Catch.$fMonadMaskIO
+                     GHC.Base.$fFunctorIO)
+                  (Hint.InterpreterT.$fMonadInterpreterInterpreterT_$cmodifySessionRef
+                     @ GHC.Types.IO
+                     Control.Monad.IO.Class.$fMonadIOIO
+                     Control.Monad.Catch.$fMonadMaskIO
+                     GHC.Base.$fFunctorIO)
+                  (Hint.InterpreterT.$fMonadInterpreterInterpreterT_$crunGhc
+                     @ GHC.Types.IO
+                     Control.Monad.IO.Class.$fMonadIOIO
+                     Control.Monad.Catch.$fMonadMaskIO
+                     GHC.Base.$fFunctorIO) -}
+a102017e11c3d2e0ee561beb114c1519
+  $s$fMonadInterpreterInterpreterT_$s$fMonadInterpreterInterpreterT_$cp1MonadInterpreter ::
+    Control.Monad.IO.Class.MonadIO
+      (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$s$fMonadIOInterpreterT -}
+92b6235174e3498a3acc087f5a9c29b7
+  $s$fMonadInterpreterInterpreterT_$s$fMonadInterpreterInterpreterT_$cp2MonadInterpreter ::
+    Control.Monad.Catch.MonadMask
+      (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$s$fMonadInterpreterInterpreterT_$s$fMonadMaskInterpreterT -}
+ed5f5e7dcafc40bddf6ea1773104de56
+  $s$fMonadInterpreterInterpreterT_$s$fMonadMaskInterpreterT ::
+    Control.Monad.Catch.MonadMask
+      (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                  Main.$s$fMonadCatchInterpreterT
+                  (Hint.InterpreterT.$fMonadMaskInterpreterT_$cmask
+                     @ GHC.Types.IO
+                     Control.Monad.Catch.$fMonadMaskIO
+                     Control.Monad.IO.Class.$fMonadIOIO)
+                  (Hint.InterpreterT.$fMonadMaskInterpreterT_$cuninterruptibleMask
+                     @ GHC.Types.IO
+                     Control.Monad.Catch.$fMonadMaskIO
+                     Control.Monad.IO.Class.$fMonadIOIO) -}
+7189cc7b4f3f5f55d049a0f40bbbb098
+  $s$fShow[]2 ::
+    ([GHC.Types.Char], [GHC.Types.Char])
+    -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (w3 :: ([GHC.Types.Char], [GHC.Types.Char]))
+                   (w4 :: GHC.Base.String)[OneShot] ->
+                 case w3 of ww { (,) ww1 ww2 ->
+                 GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows7
+                   (GHC.Types.:
+                      @ GHC.Types.Char
+                      GHC.Show.shows6
+                      (GHC.Show.showLitString
+                         ww1
+                         (GHC.Types.:
+                            @ GHC.Types.Char
+                            GHC.Show.shows6
+                            (GHC.Types.:
+                               @ GHC.Types.Char
+                               GHC.Show.shows5
+                               (GHC.Show.$fShow(,)_$sgo
+                                  (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w4)
+                                  (\ (eta1 :: GHC.Base.String) ->
+                                   GHC.Show.shows_$cshowList1 ww2 eta1)
+                                  (GHC.Types.[] @ GHC.Show.ShowS)))))) }) -}
+59e62b9005d0225b0d75a4efa5e812e6
+  $sinterpret1 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Main.$sinterpret5 of wild { Data.Typeable.Internal.TypeRep dt dt1 tc ks trs ->
+                 let {
+                   types :: [Data.Typeable.Internal.TypeRep]
+                   = GHC.Base.++
+                       @ Data.Typeable.Internal.TypeRep
+                       trs
+                       Main.$sinterpret2
+                 } in
+                 case Data.Typeable.Internal.typeRepFingerprints
+                        ks
+                        types of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           (Data.Typeable.Internal.tyConFingerprint tc)
+                           kt_fps) of dt2 { GHC.Fingerprint.Type.Fingerprint dt3 dt4 ->
+                 Data.Typeable.Internal.TypeRep dt3 dt4 tc ks types } } }) -}
+c6e43200aa2ec9914b57e1e16b5cab9b
+  $sinterpret10 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   Main.$sinterpret11
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+9398dec079a360c9ad7bb22c0b52c4f5
+  $sinterpret11 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Main.$sinterpret17 of wild { Data.Typeable.Internal.TypeRep dt dt1 tc ks trs ->
+                 let {
+                   types :: [Data.Typeable.Internal.TypeRep]
+                   = GHC.Base.++
+                       @ Data.Typeable.Internal.TypeRep
+                       trs
+                       Main.$sinterpret12
+                 } in
+                 case Data.Typeable.Internal.typeRepFingerprints
+                        ks
+                        types of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           (Data.Typeable.Internal.tyConFingerprint tc)
+                           kt_fps) of dt2 { GHC.Fingerprint.Type.Fingerprint dt3 dt4 ->
+                 Data.Typeable.Internal.TypeRep dt3 dt4 tc ks types } } }) -}
+740eaa9e2bbfd7a69f9dd6127d80ccc5
+  $sinterpret12 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   Main.$sinterpret13
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+a529610af8056e6bf3d8e2d3276992f4
+  $sinterpret13 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Main.$sinterpret5 of wild { Data.Typeable.Internal.TypeRep dt dt1 tc ks trs ->
+                 let {
+                   types :: [Data.Typeable.Internal.TypeRep]
+                   = GHC.Base.++
+                       @ Data.Typeable.Internal.TypeRep
+                       trs
+                       Main.$sinterpret14
+                 } in
+                 case Data.Typeable.Internal.typeRepFingerprints
+                        ks
+                        types of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           (Data.Typeable.Internal.tyConFingerprint tc)
+                           kt_fps) of dt2 { GHC.Fingerprint.Type.Fingerprint dt3 dt4 ->
+                 Data.Typeable.Internal.TypeRep dt3 dt4 tc ks types } } }) -}
+a8fdd500efc41213adc48659a489c2e4
+  $sinterpret14 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   Main.$sinterpret15
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+325e103504b8b8ed3e835a1ad77f2e7b
+  $sinterpret15 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$sinterpret16
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   GHC.Types.$tcChar
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+a6ce00e5b8d980ddc01a3a3f9fc5b92b
+  $sinterpret16 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   16781394633280494409##
+                   2520638044472077920##) -}
+2dfe9fd3923aa7fe05dc6b5600394eb8
+  $sinterpret17 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Main.$sinterpret18 of wild { Data.Typeable.Internal.TypeRep dt dt1 tc ks trs ->
+                 let {
+                   types :: [Data.Typeable.Internal.TypeRep]
+                   = GHC.Base.++
+                       @ Data.Typeable.Internal.TypeRep
+                       trs
+                       Main.$sinterpret12
+                 } in
+                 case Data.Typeable.Internal.typeRepFingerprints
+                        ks
+                        types of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           (Data.Typeable.Internal.tyConFingerprint tc)
+                           kt_fps) of dt2 { GHC.Fingerprint.Type.Fingerprint dt3 dt4 ->
+                 Data.Typeable.Internal.TypeRep dt3 dt4 tc ks types } } }) -}
+26d9784103a1adcb514d01ad503b26b4
+  $sinterpret18 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$sinterpret19
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   GHC.Tuple.$tc(,)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+b21e51a40cf716ed62606ca62fd0ebdc
+  $sinterpret19 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   17502837480397947244##
+                   15872498598114190556##) -}
+348633987117ea76829b204784ff8d8b
+  $sinterpret2 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   Main.$sinterpret3
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+e819d4462d440065f48914c51046d772
+  $sinterpret21 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$sinterpret22
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   GHC.Types.$tcBool
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+5126911a0298ea4606020560cd2ca77b
+  $sinterpret22 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   15899861992609591342##
+                   8208526680161485329##) -}
+c8f3a2f48b7cb47ccf92030d420be0fd
+  $sinterpret3 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$sinterpret4
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   GHC.Integer.Type.$tcInteger
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+f4cedb1c03b112915cc10e094821d172
+  $sinterpret4 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   4243490490217825131##
+                   6185988462045966752##) -}
+777be9b3dd41ede505a1e59a4c7e0055
+  $sinterpret5 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$sinterpret6
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   GHC.Types.$tc[]
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+6af9e1ec220295d52fd19385abdb7293
+  $sinterpret6 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   17730107610217102821##
+                   9866972337190828755##) -}
+24c6362eeb2ad09a7071b24f32742d4c
+  $sinterpret9 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Main.$sinterpret5 of wild { Data.Typeable.Internal.TypeRep dt dt1 tc ks trs ->
+                 let {
+                   types :: [Data.Typeable.Internal.TypeRep]
+                   = GHC.Base.++
+                       @ Data.Typeable.Internal.TypeRep
+                       trs
+                       Main.$sinterpret10
+                 } in
+                 case Data.Typeable.Internal.typeRepFingerprints
+                        ks
+                        types of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           (Data.Typeable.Internal.tyConFingerprint tc)
+                           kt_fps) of dt2 { GHC.Fingerprint.Type.Fingerprint dt3 dt4 ->
+                 Data.Typeable.Internal.TypeRep dt3 dt4 tc ks types } } }) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+a7fcd793b8606cac7211ca5df5b1d36e
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+c628b53f0daaaac4bdaf3d0df35452dd
+  demo1Int :: GHC.Base.String -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.demo1Int1
+                  `cast`
+                (<GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+aaff6b4f9733000c2b7d0d577dc86f85
+  demo1Int1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (cmd :: GHC.Base.String)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Main.demo1Int8
+                         (let {
+                            k :: Hint.InterpreterT.InterpreterT
+                                   GHC.Types.IO GHC.Integer.Type.Integer
+                            = Hint.Eval.unsafeInterpret
+                                @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                                @ GHC.Integer.Type.Integer
+                                Main.$s$fMonadInterpreterInterpreterT
+                                cmd
+                                Main.demo1Int7
+                          } in
+                          (\ (r1 :: Hint.Base.SessionData ()) ->
+                           let {
+                             m1 :: Control.Monad.Ghc.GhcT GHC.Types.IO ()
+                             = Main.demo1Int3
+                                 `cast`
+                               (Trans
+                                    (Hint.InterpreterT.N:InterpreterT[0] <GHC.Types.IO>_R <()>_N)
+                                    (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Hint.Base.SessionData ()>_R
+                                         <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                         <()>_N))
+                                 r1
+                           } in
+                           (\ (s1 :: GhcMonad.Session)
+                              (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case (m1
+                                    `cast`
+                                  (Trans
+                                       (Control.Monad.Ghc.N:GhcT[0] <GHC.Types.IO>_R <()>_N)
+                                       (GhcMonad.N:GhcT[0]
+                                            <Control.Monad.Ghc.MTLAdapter GHC.Types.IO>_R <()>_N))
+                                    s1)
+                                   `cast`
+                                 (Trans
+                                      (Control.Monad.Ghc.N:MTLAdapter[0] <GHC.Types.IO>_R <()>_N)
+                                      (GHC.Types.N:IO[0] <()>_R))
+                                   s2 of ds1 { (#,#) ipv ipv1 ->
+                            ((k `cast`
+                              (Trans
+                                   (Hint.InterpreterT.N:InterpreterT[0]
+                                        <GHC.Types.IO>_R <GHC.Integer.Type.Integer>_N)
+                                   (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                        <*>_N
+                                        <Hint.Base.SessionData ()>_R
+                                        <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                        <GHC.Integer.Type.Integer>_N))
+                                r1)
+                               `cast`
+                             (Trans
+                                  (Control.Monad.Ghc.N:GhcT[0]
+                                       <GHC.Types.IO>_R <GHC.Integer.Type.Integer>_N)
+                                  (GhcMonad.N:GhcT[0]
+                                       <Control.Monad.Ghc.MTLAdapter GHC.Types.IO>_R
+                                       <GHC.Integer.Type.Integer>_N))
+                               s1)
+                              `cast`
+                            (Trans
+                                 (Control.Monad.Ghc.N:MTLAdapter[0]
+                                      <GHC.Types.IO>_R <GHC.Integer.Type.Integer>_N)
+                                 (GHC.Types.N:IO[0] <GHC.Integer.Type.Integer>_R))
+                              ipv })
+                             `cast`
+                           (Trans
+                                (<GhcMonad.Session>_R
+                                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Integer.Type.Integer>_R))
+                                (Trans
+                                     (Sym (GhcMonad.N:GhcT[0]
+                                               (Control.Monad.Ghc.N:MTLAdapter[0] <GHC.Types.IO>_R)
+                                               <GHC.Integer.Type.Integer>_N))
+                                     (Sym (Control.Monad.Ghc.N:GhcT[0]
+                                               <GHC.Types.IO>_R) <GHC.Integer.Type.Integer>_N))))
+                            `cast`
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Hint.Base.SessionData ()>_R
+                                         <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                         <GHC.Integer.Type.Integer>_N))
+                               (Sym (Hint.InterpreterT.N:InterpreterT[0]
+                                         <GHC.Types.IO>_R) <GHC.Integer.Type.Integer>_N))))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <Data.Either.Either
+                              Hint.Base.InterpreterError GHC.Integer.Type.Integer>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 Main.demo1Int2
+                   cmd
+                   (case ipv1 of wild {
+                      Data.Either.Left b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither3
+                           (Hint.Base.$w$cshowsPrec 11# b1 (GHC.Types.[] @ GHC.Types.Char))
+                      Data.Either.Right b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither2
+                           (case GHC.Show.$w$cshowsPrec1
+                                   11#
+                                   b1
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                            GHC.Types.: @ GHC.Types.Char ww3 ww4 }) })
+                   ipv }) -}
+f1f3bebdeed434aeae8d16543e1fe20e
+  demo1Int2 ::
+    GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,1*U><L,1*U><S,U>,
+     Unfolding: (\ (cmd :: GHC.Base.String)
+                   (sresult :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      cmd
+                      (GHC.CString.unpackAppendCString#
+                         " = "#
+                         (Main.$wunsafeDrop @ GHC.Types.Char 6# sresult)))
+                   GHC.Types.True
+                   eta) -}
+180995b0301f4420e8a5591607be5a7b
+  demo1Int3 :: Hint.InterpreterT.InterpreterT GHC.Types.IO ()
+  {- Unfolding: (Hint.Context.setImportsQ
+                   @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                   Main.$s$fMonadInterpreterInterpreterT
+                   Main.demo1Int4) -}
+e65820c40c479db26dc431e61afbde3f
+  demo1Int4 ::
+    [(Hint.Base.ModuleName, GHC.Base.Maybe GHC.Base.String)]
+  {- Unfolding: (case Hint.Context.setImports_xs of wild {
+                   []
+                   -> GHC.Types.[]
+                        @ ([GHC.Types.Char], GHC.Base.Maybe GHC.Base.String)
+                   : y ys
+                   -> GHC.Types.:
+                        @ ([GHC.Types.Char], GHC.Base.Maybe GHC.Base.String)
+                        (Main.demo1Int6, y)
+                        (case ys of wild1 {
+                           []
+                           -> GHC.Types.[]
+                                @ ([GHC.Types.Char], GHC.Base.Maybe GHC.Base.String)
+                           : y1 ys1
+                           -> GHC.Types.:
+                                @ ([GHC.Types.Char], GHC.Base.Maybe GHC.Base.String)
+                                (Main.demo1Int5, y1)
+                                (GHC.Types.[]
+                                   @ ([GHC.Types.Char], GHC.Base.Maybe GHC.Base.String)) }) }) -}
+95697336a5545b63da0a356a763f64e0
+  demo1Int5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Lib"#) -}
+a83d300147b73aaa459f74962a7cdb0f
+  demo1Int6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Prelude"#) -}
+315ddbaf33ab4d7c529526ba2a22375c
+  demo1Int7 :: GHC.Base.String
+  {- Unfolding: (case Main.$sinterpret3 of ww { Data.Typeable.Internal.TypeRep ww1 ww2 ww3 ww4 ww5 ->
+                 case ww3 of ww6 { GHC.Types.TyCon ww7 ww8 ww9 ww10 ->
+                 Data.Typeable.Internal.$w$cshowsPrec
+                   GHC.Show.shows22
+                   ww7
+                   ww8
+                   ww10
+                   ww4
+                   ww5
+                   (GHC.Types.[] @ GHC.Types.Char) } }) -}
+d6473505f9e52dbf0de231b543b5a280
+  demo1Int8 ::
+    Hint.InterpreterT.InterpreterT
+      GHC.Types.IO GHC.Integer.Type.Integer
+    -> GHC.Types.IO
+         (Data.Either.Either
+            Hint.Base.InterpreterError GHC.Integer.Type.Integer)
+  {- Unfolding: (Main.demo1Int9
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Paths.libdir) -}
+1a6027b60107bda29eaefb23e66ab75d
+  demo1Int9 ::
+    [GHC.Base.String]
+    -> GHC.Base.String
+    -> Hint.InterpreterT.InterpreterT
+         GHC.Types.IO GHC.Integer.Type.Integer
+    -> GHC.Types.IO
+         (Data.Either.Either
+            Hint.Base.InterpreterError GHC.Integer.Type.Integer)
+  {- Unfolding: (Hint.InterpreterT.runInterpreterWithArgsLibdir
+                   @ GHC.Types.IO
+                   @ GHC.Integer.Type.Integer
+                   Control.Monad.IO.Class.$fMonadIOIO
+                   Control.Monad.Catch.$fMonadMaskIO) -}
+d36853079574d6700d4167551ecaa7c5
+  demoBool :: GHC.Base.String -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.demoBool1
+                  `cast`
+                (<GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+25d85a98a357fabb23f755023b244abb
+  demoBool1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (cmd :: GHC.Base.String)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Main.demoBool3
+                         (let {
+                            k :: Hint.InterpreterT.InterpreterT GHC.Types.IO GHC.Types.Bool
+                            = Hint.Eval.unsafeInterpret
+                                @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                                @ GHC.Types.Bool
+                                Main.$s$fMonadInterpreterInterpreterT
+                                cmd
+                                Main.demoBool2
+                          } in
+                          (\ (r1 :: Hint.Base.SessionData ()) ->
+                           let {
+                             m1 :: Control.Monad.Ghc.GhcT GHC.Types.IO ()
+                             = Main.demo1Int3
+                                 `cast`
+                               (Trans
+                                    (Hint.InterpreterT.N:InterpreterT[0] <GHC.Types.IO>_R <()>_N)
+                                    (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Hint.Base.SessionData ()>_R
+                                         <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                         <()>_N))
+                                 r1
+                           } in
+                           (\ (s1 :: GhcMonad.Session)
+                              (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case (m1
+                                    `cast`
+                                  (Trans
+                                       (Control.Monad.Ghc.N:GhcT[0] <GHC.Types.IO>_R <()>_N)
+                                       (GhcMonad.N:GhcT[0]
+                                            <Control.Monad.Ghc.MTLAdapter GHC.Types.IO>_R <()>_N))
+                                    s1)
+                                   `cast`
+                                 (Trans
+                                      (Control.Monad.Ghc.N:MTLAdapter[0] <GHC.Types.IO>_R <()>_N)
+                                      (GHC.Types.N:IO[0] <()>_R))
+                                   s2 of ds1 { (#,#) ipv ipv1 ->
+                            ((k `cast`
+                              (Trans
+                                   (Hint.InterpreterT.N:InterpreterT[0]
+                                        <GHC.Types.IO>_R <GHC.Types.Bool>_N)
+                                   (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                        <*>_N
+                                        <Hint.Base.SessionData ()>_R
+                                        <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                        <GHC.Types.Bool>_N))
+                                r1)
+                               `cast`
+                             (Trans
+                                  (Control.Monad.Ghc.N:GhcT[0] <GHC.Types.IO>_R <GHC.Types.Bool>_N)
+                                  (GhcMonad.N:GhcT[0]
+                                       <Control.Monad.Ghc.MTLAdapter GHC.Types.IO>_R
+                                       <GHC.Types.Bool>_N))
+                               s1)
+                              `cast`
+                            (Trans
+                                 (Control.Monad.Ghc.N:MTLAdapter[0]
+                                      <GHC.Types.IO>_R <GHC.Types.Bool>_N)
+                                 (GHC.Types.N:IO[0] <GHC.Types.Bool>_R))
+                              ipv })
+                             `cast`
+                           (Trans
+                                (<GhcMonad.Session>_R
+                                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R))
+                                (Trans
+                                     (Sym (GhcMonad.N:GhcT[0]
+                                               (Control.Monad.Ghc.N:MTLAdapter[0] <GHC.Types.IO>_R)
+                                               <GHC.Types.Bool>_N))
+                                     (Sym (Control.Monad.Ghc.N:GhcT[0]
+                                               <GHC.Types.IO>_R) <GHC.Types.Bool>_N))))
+                            `cast`
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Hint.Base.SessionData ()>_R
+                                         <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                         <GHC.Types.Bool>_N))
+                               (Sym (Hint.InterpreterT.N:InterpreterT[0]
+                                         <GHC.Types.IO>_R) <GHC.Types.Bool>_N))))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <Data.Either.Either Hint.Base.InterpreterError GHC.Types.Bool>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 Main.demo1Int2
+                   cmd
+                   (case ipv1 of wild {
+                      Data.Either.Left b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither3
+                           (Hint.Base.$w$cshowsPrec 11# b1 (GHC.Types.[] @ GHC.Types.Char))
+                      Data.Either.Right b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither2
+                           (case b1 of wild1 {
+                              GHC.Types.False -> GHC.Show.shows18
+                              GHC.Types.True -> GHC.Show.shows17 }) })
+                   ipv }) -}
+8705c8dcab0678c155f7092886262465
+  demoBool2 :: GHC.Base.String
+  {- Unfolding: (case Main.$sinterpret21 of ww { Data.Typeable.Internal.TypeRep ww1 ww2 ww3 ww4 ww5 ->
+                 case ww3 of ww6 { GHC.Types.TyCon ww7 ww8 ww9 ww10 ->
+                 Data.Typeable.Internal.$w$cshowsPrec
+                   GHC.Show.shows22
+                   ww7
+                   ww8
+                   ww10
+                   ww4
+                   ww5
+                   (GHC.Types.[] @ GHC.Types.Char) } }) -}
+a03d29bb8595e569229cbb348dd1818f
+  demoBool3 ::
+    Hint.InterpreterT.InterpreterT GHC.Types.IO GHC.Types.Bool
+    -> GHC.Types.IO
+         (Data.Either.Either Hint.Base.InterpreterError GHC.Types.Bool)
+  {- Unfolding: (Main.demoBool4
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Paths.libdir) -}
+ed9ea932729400eb61aae8f3fd56b118
+  demoBool4 ::
+    [GHC.Base.String]
+    -> GHC.Base.String
+    -> Hint.InterpreterT.InterpreterT GHC.Types.IO GHC.Types.Bool
+    -> GHC.Types.IO
+         (Data.Either.Either Hint.Base.InterpreterError GHC.Types.Bool)
+  {- Unfolding: (Hint.InterpreterT.runInterpreterWithArgsLibdir
+                   @ GHC.Types.IO
+                   @ GHC.Types.Bool
+                   Control.Monad.IO.Class.$fMonadIOIO
+                   Control.Monad.Catch.$fMonadMaskIO) -}
+1c8af49b62d77ce27e8949806e958893
+  demoInts :: GHC.Base.String -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.demoInts1
+                  `cast`
+                (<GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+62c7a8793a016eec46db58f841ccbb85
+  demoInts1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (cmd :: GHC.Base.String)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Main.demoInts3
+                         (let {
+                            k :: Hint.InterpreterT.InterpreterT
+                                   GHC.Types.IO [GHC.Integer.Type.Integer]
+                            = Hint.Eval.unsafeInterpret
+                                @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                                @ [GHC.Integer.Type.Integer]
+                                Main.$s$fMonadInterpreterInterpreterT
+                                cmd
+                                Main.demoInts2
+                          } in
+                          (\ (r1 :: Hint.Base.SessionData ()) ->
+                           let {
+                             m1 :: Control.Monad.Ghc.GhcT GHC.Types.IO ()
+                             = Main.demo1Int3
+                                 `cast`
+                               (Trans
+                                    (Hint.InterpreterT.N:InterpreterT[0] <GHC.Types.IO>_R <()>_N)
+                                    (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Hint.Base.SessionData ()>_R
+                                         <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                         <()>_N))
+                                 r1
+                           } in
+                           (\ (s1 :: GhcMonad.Session)
+                              (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case (m1
+                                    `cast`
+                                  (Trans
+                                       (Control.Monad.Ghc.N:GhcT[0] <GHC.Types.IO>_R <()>_N)
+                                       (GhcMonad.N:GhcT[0]
+                                            <Control.Monad.Ghc.MTLAdapter GHC.Types.IO>_R <()>_N))
+                                    s1)
+                                   `cast`
+                                 (Trans
+                                      (Control.Monad.Ghc.N:MTLAdapter[0] <GHC.Types.IO>_R <()>_N)
+                                      (GHC.Types.N:IO[0] <()>_R))
+                                   s2 of ds1 { (#,#) ipv ipv1 ->
+                            ((k `cast`
+                              (Trans
+                                   (Hint.InterpreterT.N:InterpreterT[0]
+                                        <GHC.Types.IO>_R <[GHC.Integer.Type.Integer]>_N)
+                                   (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                        <*>_N
+                                        <Hint.Base.SessionData ()>_R
+                                        <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                        <[GHC.Integer.Type.Integer]>_N))
+                                r1)
+                               `cast`
+                             (Trans
+                                  (Control.Monad.Ghc.N:GhcT[0]
+                                       <GHC.Types.IO>_R <[GHC.Integer.Type.Integer]>_N)
+                                  (GhcMonad.N:GhcT[0]
+                                       <Control.Monad.Ghc.MTLAdapter GHC.Types.IO>_R
+                                       <[GHC.Integer.Type.Integer]>_N))
+                               s1)
+                              `cast`
+                            (Trans
+                                 (Control.Monad.Ghc.N:MTLAdapter[0]
+                                      <GHC.Types.IO>_R <[GHC.Integer.Type.Integer]>_N)
+                                 (GHC.Types.N:IO[0] <[GHC.Integer.Type.Integer]>_R))
+                              ipv })
+                             `cast`
+                           (Trans
+                                (<GhcMonad.Session>_R
+                                 ->_R Sym (GHC.Types.N:IO[0] <[GHC.Integer.Type.Integer]>_R))
+                                (Trans
+                                     (Sym (GhcMonad.N:GhcT[0]
+                                               (Control.Monad.Ghc.N:MTLAdapter[0] <GHC.Types.IO>_R)
+                                               <[GHC.Integer.Type.Integer]>_N))
+                                     (Sym (Control.Monad.Ghc.N:GhcT[0]
+                                               <GHC.Types.IO>_R) <[GHC.Integer.Type.Integer]>_N))))
+                            `cast`
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Hint.Base.SessionData ()>_R
+                                         <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                         <[GHC.Integer.Type.Integer]>_N))
+                               (Sym (Hint.InterpreterT.N:InterpreterT[0]
+                                         <GHC.Types.IO>_R) <[GHC.Integer.Type.Integer]>_N))))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <Data.Either.Either
+                              Hint.Base.InterpreterError [GHC.Integer.Type.Integer]>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 Main.demo1Int2
+                   cmd
+                   (case ipv1 of wild {
+                      Data.Either.Left b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither3
+                           (Hint.Base.$w$cshowsPrec 11# b1 (GHC.Types.[] @ GHC.Types.Char))
+                      Data.Either.Right b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither2
+                           (GHC.Show.$fShowInteger_$cshowList
+                              b1
+                              (GHC.Types.[] @ GHC.Types.Char)) })
+                   ipv }) -}
+0a41a048b9e24f7bf301b46e758a6d8b
+  demoInts2 :: GHC.Base.String
+  {- Unfolding: (case Main.$sinterpret1 of ww { Data.Typeable.Internal.TypeRep ww1 ww2 ww3 ww4 ww5 ->
+                 case ww3 of ww6 { GHC.Types.TyCon ww7 ww8 ww9 ww10 ->
+                 Data.Typeable.Internal.$w$cshowsPrec
+                   GHC.Show.shows22
+                   ww7
+                   ww8
+                   ww10
+                   ww4
+                   ww5
+                   (GHC.Types.[] @ GHC.Types.Char) } }) -}
+f573d3129d4360ef5353e374c481cb65
+  demoInts3 ::
+    Hint.InterpreterT.InterpreterT
+      GHC.Types.IO [GHC.Integer.Type.Integer]
+    -> GHC.Types.IO
+         (Data.Either.Either
+            Hint.Base.InterpreterError [GHC.Integer.Type.Integer])
+  {- Unfolding: (Main.demoInts4
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Paths.libdir) -}
+47fab2aee3f85065467756b0748fde68
+  demoInts4 ::
+    [GHC.Base.String]
+    -> GHC.Base.String
+    -> Hint.InterpreterT.InterpreterT
+         GHC.Types.IO [GHC.Integer.Type.Integer]
+    -> GHC.Types.IO
+         (Data.Either.Either
+            Hint.Base.InterpreterError [GHC.Integer.Type.Integer])
+  {- Unfolding: (Hint.InterpreterT.runInterpreterWithArgsLibdir
+                   @ GHC.Types.IO
+                   @ [GHC.Integer.Type.Integer]
+                   Control.Monad.IO.Class.$fMonadIOIO
+                   Control.Monad.Catch.$fMonadMaskIO) -}
+52b81239c45a8f1ce3251c5d0f074856
+  demoMovs :: GHC.Base.String -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.demoMovs1
+                  `cast`
+                (<GHC.Base.String>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+20777c8cbd168f4af3d919cae8cc5ce8
+  demoMovs1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (cmd :: GHC.Base.String)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Main.demoMovs3
+                         (let {
+                            k :: Hint.InterpreterT.InterpreterT GHC.Types.IO [Lib.Move]
+                            = Hint.Eval.unsafeInterpret
+                                @ (Hint.InterpreterT.InterpreterT GHC.Types.IO)
+                                @ [Lib.Move]
+                                Main.$s$fMonadInterpreterInterpreterT
+                                cmd
+                                Main.demoMovs2
+                          } in
+                          (\ (r1 :: Hint.Base.SessionData ()) ->
+                           let {
+                             m1 :: Control.Monad.Ghc.GhcT GHC.Types.IO ()
+                             = Main.demo1Int3
+                                 `cast`
+                               (Trans
+                                    (Hint.InterpreterT.N:InterpreterT[0] <GHC.Types.IO>_R <()>_N)
+                                    (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Hint.Base.SessionData ()>_R
+                                         <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                         <()>_N))
+                                 r1
+                           } in
+                           (\ (s1 :: GhcMonad.Session)
+                              (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case (m1
+                                    `cast`
+                                  (Trans
+                                       (Control.Monad.Ghc.N:GhcT[0] <GHC.Types.IO>_R <()>_N)
+                                       (GhcMonad.N:GhcT[0]
+                                            <Control.Monad.Ghc.MTLAdapter GHC.Types.IO>_R <()>_N))
+                                    s1)
+                                   `cast`
+                                 (Trans
+                                      (Control.Monad.Ghc.N:MTLAdapter[0] <GHC.Types.IO>_R <()>_N)
+                                      (GHC.Types.N:IO[0] <()>_R))
+                                   s2 of ds1 { (#,#) ipv ipv1 ->
+                            ((k `cast`
+                              (Trans
+                                   (Hint.InterpreterT.N:InterpreterT[0]
+                                        <GHC.Types.IO>_R <[Lib.Move]>_N)
+                                   (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                        <*>_N
+                                        <Hint.Base.SessionData ()>_R
+                                        <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                        <[Lib.Move]>_N))
+                                r1)
+                               `cast`
+                             (Trans
+                                  (Control.Monad.Ghc.N:GhcT[0] <GHC.Types.IO>_R <[Lib.Move]>_N)
+                                  (GhcMonad.N:GhcT[0]
+                                       <Control.Monad.Ghc.MTLAdapter GHC.Types.IO>_R
+                                       <[Lib.Move]>_N))
+                               s1)
+                              `cast`
+                            (Trans
+                                 (Control.Monad.Ghc.N:MTLAdapter[0] <GHC.Types.IO>_R <[Lib.Move]>_N)
+                                 (GHC.Types.N:IO[0] <[Lib.Move]>_R))
+                              ipv })
+                             `cast`
+                           (Trans
+                                (<GhcMonad.Session>_R ->_R Sym (GHC.Types.N:IO[0] <[Lib.Move]>_R))
+                                (Trans
+                                     (Sym (GhcMonad.N:GhcT[0]
+                                               (Control.Monad.Ghc.N:MTLAdapter[0] <GHC.Types.IO>_R)
+                                               <[Lib.Move]>_N))
+                                     (Sym (Control.Monad.Ghc.N:GhcT[0]
+                                               <GHC.Types.IO>_R) <[Lib.Move]>_N))))
+                            `cast`
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Hint.Base.SessionData ()>_R
+                                         <Control.Monad.Ghc.GhcT GHC.Types.IO>_R
+                                         <[Lib.Move]>_N))
+                               (Sym (Hint.InterpreterT.N:InterpreterT[0]
+                                         <GHC.Types.IO>_R) <[Lib.Move]>_N))))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <Data.Either.Either Hint.Base.InterpreterError [Lib.Move]>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 Main.demo1Int2
+                   cmd
+                   (case ipv1 of wild {
+                      Data.Either.Left b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither3
+                           (Hint.Base.$w$cshowsPrec 11# b1 (GHC.Types.[] @ GHC.Types.Char))
+                      Data.Either.Right b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither2
+                           (GHC.Show.showList__
+                              @ ([GHC.Types.Char], [GHC.Types.Char])
+                              Main.$s$fShow[]2
+                              b1
+                              (GHC.Types.[] @ GHC.Types.Char)) })
+                   ipv }) -}
+7880003b5a4f34dd4aecd1d00cae640e
+  demoMovs2 :: GHC.Base.String
+  {- Unfolding: (case Main.$sinterpret9 of ww { Data.Typeable.Internal.TypeRep ww1 ww2 ww3 ww4 ww5 ->
+                 case ww3 of ww6 { GHC.Types.TyCon ww7 ww8 ww9 ww10 ->
+                 Data.Typeable.Internal.$w$cshowsPrec
+                   GHC.Show.shows22
+                   ww7
+                   ww8
+                   ww10
+                   ww4
+                   ww5
+                   (GHC.Types.[] @ GHC.Types.Char) } }) -}
+e80a1806a1fecdaa661d93ff00a88583
+  demoMovs3 ::
+    Hint.InterpreterT.InterpreterT GHC.Types.IO [Lib.Move]
+    -> GHC.Types.IO
+         (Data.Either.Either Hint.Base.InterpreterError [Lib.Move])
+  {- Unfolding: (Main.demoMovs4
+                   (GHC.Types.[] @ GHC.Base.String)
+                   GHC.Paths.libdir) -}
+2cb316a99039850a2e8f6e4bd121137a
+  demoMovs4 ::
+    [GHC.Base.String]
+    -> GHC.Base.String
+    -> Hint.InterpreterT.InterpreterT GHC.Types.IO [Lib.Move]
+    -> GHC.Types.IO
+         (Data.Either.Either Hint.Base.InterpreterError [Lib.Move])
+  {- Unfolding: (Hint.InterpreterT.runInterpreterWithArgsLibdir
+                   @ GHC.Types.IO
+                   @ [Lib.Move]
+                   Control.Monad.IO.Class.$fMonadIOIO
+                   Control.Monad.Catch.$fMonadMaskIO) -}
+ac7ad8170da94d3b11f727edd465f048
+  demor :: GHC.Base.String -> GHC.Base.String -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,1*U><L,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.demo1Int2
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+adbc6b3397a3621d31459bb403a4951d
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+0e0f9f3368a6b666878d091029753e1e
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main18
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main17
+                        GHC.Types.True
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case Main.demoInts1 Main.main16 ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case Main.demoInts1 Main.main15 ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case Main.demoInts1 Main.main14 ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                 case Main.demoInts1 Main.main13 ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main12
+                        GHC.Types.True
+                        ipv10 of ds7 { (#,#) ipv12 ipv13 ->
+                 case Main.demoInts1 Main.main11 ipv12 of ds8 { (#,#) ipv14 ipv15 ->
+                 case Main.demoInts1 Main.main10 ipv14 of ds9 { (#,#) ipv16 ipv17 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main9
+                        GHC.Types.True
+                        ipv16 of ds10 { (#,#) ipv18 ipv19 ->
+                 case Main.demo1Int1 Main.main8 ipv18 of ds11 { (#,#) ipv20 ipv21 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main7
+                        GHC.Types.True
+                        ipv20 of ds12 { (#,#) ipv22 ipv23 ->
+                 case Main.demoBool1 Main.main6 ipv22 of ds13 { (#,#) ipv24 ipv25 ->
+                 case Main.demoBool1 Main.main5 ipv24 of ds14 { (#,#) ipv26 ipv27 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main4
+                        GHC.Types.True
+                        ipv26 of ds15 { (#,#) ipv28 ipv29 ->
+                 case Main.demoMovs1 Main.main3 ipv28 of ds16 { (#,#) ipv30 ipv31 ->
+                 Main.demoMovs1 Main.main2 ipv30 } } } } } } } } } } } } } } } }) -}
+f1512683e6bd5d3cb42d8747293520f4
+  main10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "doubleEveryOther [1,2,3]   "#) -}
+f1ec1975ca3e2438c81c5176d9c7bd65
+  main11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "doubleEveryOther [8,7,6,5] "#) -}
+544e26abee15749fdc769b6d3dbbc22f
+  main12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \Exercise 2"#) -}
+4658c64d5dab402f8eae283b67948636
+  main13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "toDigits (-17)             "#) -}
+a630ced3a0c5f39f2671c8b46c544f02
+  main14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "toDigits 0                 "#) -}
+8c7a3b984f1d5f1f986d5e44ff4684f1
+  main15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "toDigitsRev 1234           "#) -}
+b23bfdd27dcf910687bf177a7df7d99e
+  main16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "toDigits 1234              "#) -}
+846f78a604e14a998189283a367d18f5
+  main17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \Exercise 1"#) -}
+35602eea56bb6e5400adf5f471322f80
+  main18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "CIS194 Homework 1"#) -}
+551912284a9369251a079c564b6953e5
+  main19 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+7f7f2a87539d5b6c1cccc4c453bf9d58
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "hanoi 3 \"a\" \"b\" \"c\""#) -}
+2977e1eef77d8dbbd588268fd757536a
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "hanoi 2 \"a\" \"b\" \"c\""#) -}
+17ff1bd440d547da9b1b4ed5609e617d
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \Exercise 5"#) -}
+7f9e4125b9f272ed6b036909336c1e85
+  main5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "validate 4012888888881882  "#) -}
+9e57201165cad701be0fe220f59e5f55
+  main6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "validate 4012888888881881  "#) -}
+255126ea9324636786420686ba8ae201
+  main7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \Exercise 4"#) -}
+76c741ff69b3bf84e581931d5fd11c62
+  main8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "sumDigits [16,7,12,5]      "#) -}
+75eb3eb1c47c654d8f46fbe9521f2892
+  main9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \Exercise 3"#) -}
+"SPEC/Main $fMonadCatchInterpreterT @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                          GHC.Types.IO)
+                                                          ($dMonadMask :: Control.Monad.Catch.MonadMask
+                                                                            GHC.Types.IO)
+  Hint.InterpreterT.$fMonadCatchInterpreterT @ GHC.Types.IO
+                                             $dMonadMask
+                                             $dMonadIO
+  = Main.$s$fMonadCatchInterpreterT
+"SPEC/Main $fMonadCatchInterpreterT_$cp1MonadCatch @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                         GHC.Types.IO)
+                                                                         ($dMonadMask :: Control.Monad.Catch.MonadMask
+                                                                                           GHC.Types.IO)
+  Hint.InterpreterT.$fMonadCatchInterpreterT_$cp1MonadCatch @ GHC.Types.IO
+                                                            $dMonadMask
+                                                            $dMonadIO
+  = Main.$s$fMonadCatchInterpreterT_$s$fMonadCatchInterpreterT_$cp1MonadCatch
+"SPEC/Main $fMonadIOInterpreterT @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                       GHC.Types.IO)
+  Hint.InterpreterT.$fMonadIOInterpreterT @ GHC.Types.IO $dMonadIO
+  = Main.$s$fMonadIOInterpreterT
+"SPEC/Main $fMonadIOInterpreterT_$cp1MonadIO @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                   GHC.Types.IO)
+  Hint.InterpreterT.$fMonadIOInterpreterT_$cp1MonadIO @ GHC.Types.IO
+                                                      $dMonadIO
+  = Main.$s$fMonadCatchInterpreterT_$s$fMonadIOInterpreterT_$cp1MonadIO
+"SPEC/Main $fMonadInterpreterInterpreterT @ IO" [ALWAYS] forall ($dFunctor :: GHC.Base.Functor
+                                                                                GHC.Types.IO)
+                                                                ($dMonadMask :: Control.Monad.Catch.MonadMask
+                                                                                  GHC.Types.IO)
+                                                                ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                GHC.Types.IO)
+  Hint.InterpreterT.$fMonadInterpreterInterpreterT @ GHC.Types.IO
+                                                   $dMonadIO
+                                                   $dMonadMask
+                                                   $dFunctor
+  = Main.$s$fMonadInterpreterInterpreterT
+"SPEC/Main $fMonadInterpreterInterpreterT_$cp1MonadInterpreter @ IO" [ALWAYS] forall ($dFunctor :: GHC.Base.Functor
+                                                                                                     GHC.Types.IO)
+                                                                                     ($dMonadMask :: Control.Monad.Catch.MonadMask
+                                                                                                       GHC.Types.IO)
+                                                                                     ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                                     GHC.Types.IO)
+  Hint.InterpreterT.$fMonadInterpreterInterpreterT_$cp1MonadInterpreter @ GHC.Types.IO
+                                                                        $dMonadIO
+                                                                        $dMonadMask
+                                                                        $dFunctor
+  = Main.$s$fMonadInterpreterInterpreterT_$s$fMonadInterpreterInterpreterT_$cp1MonadInterpreter
+"SPEC/Main $fMonadInterpreterInterpreterT_$cp2MonadInterpreter @ IO" [ALWAYS] forall ($dFunctor :: GHC.Base.Functor
+                                                                                                     GHC.Types.IO)
+                                                                                     ($dMonadMask :: Control.Monad.Catch.MonadMask
+                                                                                                       GHC.Types.IO)
+                                                                                     ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                                     GHC.Types.IO)
+  Hint.InterpreterT.$fMonadInterpreterInterpreterT_$cp2MonadInterpreter @ GHC.Types.IO
+                                                                        $dMonadIO
+                                                                        $dMonadMask
+                                                                        $dFunctor
+  = Main.$s$fMonadInterpreterInterpreterT_$s$fMonadInterpreterInterpreterT_$cp2MonadInterpreter
+"SPEC/Main $fMonadInterpreterT @ IO" [ALWAYS] forall ($dMonad :: GHC.Base.Monad
+                                                                   GHC.Types.IO)
+  Hint.InterpreterT.$fMonadInterpreterT @ GHC.Types.IO $dMonad
+  = Main.$s$fMonadCatchInterpreterT_$s$fMonadInterpreterT
+"SPEC/Main $fMonadMaskInterpreterT @ IO" [ALWAYS] forall ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                         GHC.Types.IO)
+                                                         ($dMonadMask :: Control.Monad.Catch.MonadMask
+                                                                           GHC.Types.IO)
+  Hint.InterpreterT.$fMonadMaskInterpreterT @ GHC.Types.IO
+                                            $dMonadMask
+                                            $dMonadIO
+  = Main.$s$fMonadInterpreterInterpreterT_$s$fMonadMaskInterpreterT
+"SPEC/Main $fMonadThrowInterpreterT @ IO" [ALWAYS] forall ($dMonadCatch :: Control.Monad.Catch.MonadCatch
+                                                                             GHC.Types.IO)
+  Hint.InterpreterT.$fMonadThrowInterpreterT @ GHC.Types.IO
+                                             $dMonadCatch
+  = Main.$s$fMonadCatchInterpreterT_$s$fMonadThrowInterpreterT
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
