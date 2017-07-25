@@ -1,6 +1,7 @@
 module Main where
 
-import Lib
+import Log
+import LogAnalysis
 import Language.Haskell.Interpreter
 
 demor :: String -> String -> IO ()
@@ -9,7 +10,7 @@ demor cmd sresult =
 
 demoInts :: String -> IO ()
 demoInts cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Lib"] >> interpret cmd (as :: [Integer])
+  result <- runInterpreter $ setImports ["Prelude","Log","LogAnalysis"] >> interpret cmd (as :: [Integer])
   demor cmd (show result)
 
 main :: IO ()

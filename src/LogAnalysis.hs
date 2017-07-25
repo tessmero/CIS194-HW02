@@ -1,7 +1,8 @@
-module Lib (
+module LogAnalysis (
   toDigits
   ) where
 
+import Log
 
 -- Exercise 1 
 -- find the digits of a number
