@@ -5,12 +5,13 @@ import LogAnalysis
 import Language.Haskell.Interpreter
 
 demor :: String -> String -> IO ()
-demor cmd sresult =
-  putStrLn (cmd ++ " = " ++ (drop 6 (sresult)))
+demor cmd sresult = do
+  let trim = reverse (drop 1 (reverse (drop 7 sresult)))
+  putStrLn (cmd ++ " = " ++ trim)
 
-demoInts :: String -> IO ()
-demoInts cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Log","LogAnalysis"] >> interpret cmd (as :: [Integer])
+demoLogm :: String -> IO ()
+demoLogm cmd = do
+  result <- runInterpreter $ setImports ["Prelude","Log","LogAnalysis"] >> interpret cmd (as :: LogMessage)
   demor cmd (show result)
 
 main :: IO ()
@@ -18,4 +19,6 @@ main = do
   putStrLn "CIS194 Homework 2"
 
   putStrLn "\nExercise 1"
-  demoInts "toDigits 1234              "
+  demoLogm "parseMessage \"E 2 562 help help\"               "
+  demoLogm "parseMessage \"I 29 la la la\"                   "
+  demoLogm "parseMessage \"This is not in the right format\" "
