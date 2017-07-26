@@ -7,26 +7,24 @@ import Log
 -- Exercise 1 
 -- parse an individual message, then a whole log file
 
+parseMessageWithType :: MessageType -> [String] -> LogMessage
+parseMessageWithType flavor parts = do
+  let timeStamp = read (parts!!0) :: Int
+  let message = unwords (drop 1 parts)
+  LogMessage flavor timeStamp message
+
 parseMessage :: String -> LogMessage
 
 parseMessage ('I':' ':message) = do
-  let parts = words message
-  let timeStamp = read (parts!!0) :: Int
-  let infoMsg = unwords (drop 1 parts)
-  LogMessage Info timeStamp infoMsg
+  parseMessageWithType Info (words message)
 
 parseMessage ('W':' ':message) = do
-  let parts = words message
-  let timeStamp = read (parts!!0) :: Int
-  let warnMsg = unwords (drop 1 parts)
-  LogMessage Warning timeStamp warnMsg
+  parseMessageWithType  Warning (words message)
 
 parseMessage ('E':' ':message) = do
   let parts = words message
   let errNum = read (parts!!0) :: Int
-  let timeStamp = read (parts!!1) :: Int
-  let errMsg = unwords (drop 2 parts)
-  LogMessage (Error errNum) timeStamp errMsg
+  parseMessageWithType (Error errNum) (drop 1 parts)
 
 parseMessage message = Unknown message
 
