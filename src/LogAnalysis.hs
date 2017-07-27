@@ -1,5 +1,5 @@
 module LogAnalysis (
-  parseMessage, parse, insert
+  parseMessage, parse, insert, build, inOrder, whatWentWrong
   ) where
 
 import Log
@@ -44,5 +44,40 @@ insert :: LogMessage -> MessageTree -> MessageTree
 insert (Unknown newmsg) tree = tree
 insert newmsg Leaf = Node Leaf newmsg Leaf
 insert newmsg (Node left msg right) 
-  | newmsg < msg  = insert newmsg left
-  | otherwise       = insert newmsg right
+  | newmsg < msg   = Node (insert newmsg left) msg right
+  | otherwise      = Node left msg (insert newmsg right)
+
+
+-- Exercise 3
+-- Define a functions which builds up a MessageTree
+-- containing the messages in the given list
+
+build :: [LogMessage] -> MessageTree
+build [] = Leaf
+build (msg:others) = insert msg (build others)
+
+
+-- Exercise 4
+-- Define a function which takes a sorted MessageTree
+-- and produces a list of all the LogMessages it contains,
+-- sorted by timestamp (ascending)
+
+inOrder :: MessageTree -> [LogMessage]
+inOrder Leaf = []
+inOrder (Node left msg right) = (inOrder left) ++ msg : (inOrder right)
+
+
+-- Exercise 5
+-- Define a function which takes an unsorted list of LogMessages,
+-- and returns a sorted list of any errores with serverity >= 50
+
+filterBadErrs :: [LogMessage] -> [LogMessage]
+filterBadErrs [] = []
+filterBadErrs ( (LogMessage (Error severity) time msg) : [])
+  | severity >= 50 = [LogMessage (Error severity) time msg]
+  | otherwise      = []
+filterBadErrs ( _:[] ) = []
+filterBadErrs ( msg : others ) = (filterBadErrs [msg]) ++ (filterBadErrs others)
+
+whatWentWrong :: [LogMessage] -> [String]
+whatWentWrong (messages) = map show (filterBadErrs (inOrder (build messages)))
