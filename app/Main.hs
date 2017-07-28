@@ -12,24 +12,26 @@ demort cmd stresult = putStrLn (cmd ++ " = " ++ stresult)
 demor :: String -> String -> IO ()
 demor cmd sresult = demort cmd (drop 6 sresult) 
 
+imports = ["Prelude","Log","LogAnalysis"]
+
 demoLogm :: String -> IO ()
 demoLogm cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Log","LogAnalysis"] >> interpret cmd (as :: LogMessage)
+  result <- runInterpreter $ setImports imports >> interpret cmd (as :: LogMessage)
   demor cmd (show result)
 
 demoLogs :: String -> IO ()
 demoLogs cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Log","LogAnalysis"] >> interpret cmd (as :: [LogMessage])
+  result <- runInterpreter $ setImports imports >> interpret cmd (as :: [LogMessage])
   demor cmd (show result)
 
 demoTree :: String -> IO ()
 demoTree cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Log","LogAnalysis"] >> interpret cmd (as :: MessageTree)
+  result <- runInterpreter $ setImports imports >> interpret cmd (as :: MessageTree)
   demor cmd (show result)
 
 demoStrs :: String -> IO ()
 demoStrs cmd = do
-  result <- runInterpreter $ setImports ["Prelude","Log","LogAnalysis"] >> interpret cmd (as :: [String])
+  result <- runInterpreter $ setImports imports >> interpret cmd (as :: [String])
   demor cmd (show result)
 
 main :: IO ()
